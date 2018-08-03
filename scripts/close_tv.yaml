@@ -1,0 +1,10 @@
+alias: "Closing TV"
+sequence:
+  # Turn off lgtv, sony_amp,himedia
+  - service: switch.turn_off
+    data:
+      entity_id: switch.mod
+  - delay: '00:00:01'
+  - service: switch.turn_off
+    data:
+      entity_id: switch.lgtv

@@ -1,0 +1,16 @@
+alias: "Watching TV"
+sequence:
+  # Turn on lgtv, mod
+  - service: switch.turn_on
+    data:
+      entity_id: switch.lgtv
+  - delay: '00:00:01'
+  # switch lgtv input to HDMI2
+  - service: switch.turn_on
+    data:
+      entity_id: switch.mod
+  - delay: '00:00:10'
+  # switch lgtv input to HDMI2
+  - service: switch.turn_on
+    data:
+      entity_id: switch.lgtv_hdmi2

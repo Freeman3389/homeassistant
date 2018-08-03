@@ -1,0 +1,201 @@
+2018-08-02 17:29:15 INFO (MainThread) [homeassistant.setup] Setup of domain logger took 0.0 seconds.
+2018-08-02 17:29:15 INFO (MainThread) [homeassistant.loader] Loaded history from homeassistant.components.history
+2018-08-02 17:29:15 INFO (MainThread) [homeassistant.loader] Loaded recorder from homeassistant.components.recorder
+2018-08-02 17:29:15 INFO (MainThread) [homeassistant.loader] Loaded http from homeassistant.components.http
+2018-08-02 17:29:15 INFO (MainThread) [homeassistant.loader] Loaded frontend from homeassistant.components.frontend
+2018-08-02 17:29:15 INFO (MainThread) [homeassistant.loader] Loaded api from homeassistant.components.api
+2018-08-02 17:29:15 INFO (MainThread) [homeassistant.loader] Loaded websocket_api from homeassistant.components.websocket_api
+2018-08-02 17:29:15 INFO (MainThread) [homeassistant.loader] Loaded system_log from homeassistant.components.system_log
+2018-08-02 17:29:15 INFO (MainThread) [homeassistant.loader] Loaded auth from homeassistant.components.auth
+2018-08-02 17:29:15 INFO (MainThread) [homeassistant.loader] Loaded onboarding from homeassistant.components.onboarding
+2018-08-02 17:29:15 INFO (MainThread) [homeassistant.setup] Setting up recorder
+2018-08-02 17:29:16 INFO (MainThread) [homeassistant.setup] Setting up http
+2018-08-02 17:29:16 INFO (MainThread) [homeassistant.setup] Setup of domain http took 0.0 seconds.
+2018-08-02 17:29:16 INFO (MainThread) [homeassistant.setup] Setting up auth
+2018-08-02 17:29:16 INFO (MainThread) [homeassistant.setup] Setup of domain auth took 0.0 seconds.
+2018-08-02 17:29:16 INFO (MainThread) [homeassistant.setup] Setting up onboarding
+2018-08-02 17:29:16 INFO (MainThread) [homeassistant.setup] Setting up api
+2018-08-02 17:29:16 INFO (MainThread) [homeassistant.setup] Setting up websocket_api
+2018-08-02 17:29:16 INFO (MainThread) [homeassistant.setup] Setup of domain websocket_api took 0.0 seconds.
+2018-08-02 17:29:16 INFO (MainThread) [homeassistant.setup] Setting up system_log
+2018-08-02 17:29:16 INFO (MainThread) [homeassistant.setup] Setup of domain system_log took 0.0 seconds.
+2018-08-02 17:29:16 INFO (MainThread) [homeassistant.setup] Setup of domain api took 0.1 seconds.
+2018-08-02 17:29:16 INFO (MainThread) [homeassistant.setup] Setup of domain onboarding took 0.1 seconds.
+2018-08-02 17:29:16 INFO (MainThread) [homeassistant.setup] Setting up frontend
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setup of domain recorder took 2.4 seconds.
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setup of domain frontend took 1.9 seconds.
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setting up history
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setup of domain history took 0.0 seconds.
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded fan from homeassistant.components.fan
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded group from homeassistant.components.group
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded fan.xiaomi_miio from homeassistant.components.fan.xiaomi_miio
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded sensor from homeassistant.components.sensor
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded sensor.speedtest from homeassistant.components.sensor.speedtest
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded sensor.yr from homeassistant.components.sensor.yr
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded sensor.template from homeassistant.components.sensor.template
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setting up sensor
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded switch from homeassistant.components.switch
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded switch.broadlink from homeassistant.components.switch.broadlink
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded switch.xiaomi_miio from homeassistant.components.switch.xiaomi_miio
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded cloud from homeassistant.components.cloud
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded updater from homeassistant.components.updater
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded logbook from homeassistant.components.logbook
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded discovery from homeassistant.components.discovery
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setting up group
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded automation from homeassistant.components.automation
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded script from homeassistant.components.script
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded map from homeassistant.components.map
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setting up map
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setup of domain map took 0.0 seconds.
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded config from homeassistant.components.config
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded conversation from homeassistant.components.conversation
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded device_tracker from homeassistant.components.device_tracker
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded zone from homeassistant.components.zone
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded device_tracker.asuswrt from homeassistant.components.device_tracker.asuswrt
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded sun from homeassistant.components.sun
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setting up sun
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setup of domain sun took 0.0 seconds.
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded tts from homeassistant.components.tts
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded tts.google from homeassistant.components.tts.google
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded xiaomi_aqara from homeassistant.components.xiaomi_aqara
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded cast from homeassistant.components.cast
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.loader] Loaded influxdb from homeassistant.components.influxdb
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.components.sensor] Setting up sensor.template
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.components.sensor] Setting up sensor.template
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setting up updater
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setting up zone
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setup of domain zone took 0.0 seconds.
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setting up logbook
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setup of domain logbook took 0.0 seconds.
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setting up config
+2018-08-02 17:29:18 INFO (MainThread) [homeassistant.setup] Setting up conversation
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setup of domain conversation took 0.0 seconds.
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.loader] Loaded config.hassbian from homeassistant.components.config.hassbian
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.loader] Loaded config.customize from homeassistant.components.config.customize
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.loader] Loaded config.automation from homeassistant.components.config.automation
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.loader] Loaded config.group from homeassistant.components.config.group
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.loader] Loaded config.script from homeassistant.components.config.script
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.loader] Loaded config.entity_registry from homeassistant.components.config.entity_registry
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.loader] Loaded config.core from homeassistant.components.config.core
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.loader] Loaded config.config_entries from homeassistant.components.config.config_entries
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setup of domain updater took 0.2 seconds.
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setup of domain group took 0.5 seconds.
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setting up discovery
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setup of domain discovery took 0.1 seconds.
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setting up fan
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setting up switch
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setting up automation
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setting up script
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setting up device_tracker
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setup of domain automation took 0.1 seconds.
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setup of domain script took 0.1 seconds.
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setting up xiaomi_aqara
+2018-08-02 17:29:19 INFO (SyncWorker_3) [homeassistant.components.xiaomi_aqara] Discovering Xiaomi Gateways (Try 1)
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setting up cast
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setup of domain cast took 0.0 seconds.
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.loader] Loaded media_player from homeassistant.components.media_player
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setting up media_player
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.setup] Setup of domain media_player took 0.0 seconds.
+2018-08-02 17:29:19 INFO (MainThread) [homeassistant.loader] Loaded media_player.cast from homeassistant.components.media_player.cast
+2018-08-02 17:29:19 INFO (SyncWorker_4) [homeassistant.util.package] Attempting install of influxdb==5.0.0
+2018-08-02 17:29:19 INFO (SyncWorker_3) [xiaomi_gateway] Xiaomi Gateway 7c49eb1a4ac5 found at IP 172.20.2.66
+2018-08-02 17:29:19 INFO (SyncWorker_3) [xiaomi_gateway] Discovering Xiaomi Devices
+2018-08-02 17:29:19 INFO (SyncWorker_3) [xiaomi_gateway] Found 8 devices
+2018-08-02 17:29:20 INFO (SyncWorker_2) [pychromecast] Querying device status
+2018-08-02 17:29:20 INFO (SyncWorker_1) [pychromecast] Querying device status
+2018-08-02 17:29:25 INFO (SyncWorker_3) [xiaomi_gateway] Gateway discovery finished in 5 seconds
+2018-08-02 17:29:25 INFO (SyncWorker_3) [xiaomi_gateway] Creating Multicast Socket
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.loader] Loaded binary_sensor from homeassistant.components.binary_sensor
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.setup] Setting up binary_sensor
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.setup] Setup of domain binary_sensor took 0.0 seconds.
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.loader] Loaded light from homeassistant.components.light
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.loader] Loaded cover from homeassistant.components.cover
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.loader] Loaded lock from homeassistant.components.lock
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.loader] Loaded binary_sensor.xiaomi_aqara from homeassistant.components.binary_sensor.xiaomi_aqara
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.components.binary_sensor] Setting up binary_sensor.xiaomi_aqara
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.setup] Setting up light
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.setup] Setting up cover
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.setup] Setup of domain cover took 0.0 seconds.
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.setup] Setting up lock
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.setup] Setup of domain lock took 0.0 seconds.
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.setup] Setup of domain light took 0.0 seconds.
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.loader] Loaded cover.xiaomi_aqara from homeassistant.components.cover.xiaomi_aqara
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.components.cover] Setting up cover.xiaomi_aqara
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.loader] Loaded lock.xiaomi_aqara from homeassistant.components.lock.xiaomi_aqara
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.components.lock] Setting up lock.xiaomi_aqara
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.loader] Loaded light.xiaomi_aqara from homeassistant.components.light.xiaomi_aqara
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.components.light] Setting up light.xiaomi_aqara
+2018-08-02 17:29:25 INFO (MainThread) [homeassistant.setup] Setup of domain xiaomi_aqara took 5.9 seconds.
+2018-08-02 17:29:28 WARNING (MainThread) [homeassistant.setup] Setup of config is taking over 10 seconds.
+2018-08-02 17:29:35 INFO (MainThread) [homeassistant.setup] Setting up influxdb
+2018-08-02 17:29:35 INFO (MainThread) [homeassistant.components.sensor] Setting up sensor.speedtest
+2018-08-02 17:29:35 ERROR (SyncWorker_2) [homeassistant.components.influxdb] Database host is not accessible due to 'HTTPSConnectionPool(host='172.20.2.62', port=20000): Max retries exceeded with url: /query?q=SHOW+SERIES+LIMIT+1%3B&db=home_assistant (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f423c1379e8>: Failed to establish a new connection: [Errno 111] Connection refused',))', please check your entries in the configuration file (host, port, etc.) and verify that the database exists and is READ/WRITE
+2018-08-02 17:29:35 INFO (MainThread) [homeassistant.components.sensor] Setting up sensor.yr
+2018-08-02 17:29:38 INFO (MainThread) [homeassistant.setup] Setup of domain influxdb took 3.1 seconds.
+2018-08-02 17:29:38 ERROR (MainThread) [homeassistant.setup] Setup failed for influxdb: Component failed to initialize.
+2018-08-02 17:29:38 INFO (MainThread) [homeassistant.setup] Setting up cloud
+2018-08-02 17:29:38 INFO (MainThread) [homeassistant.setup] Setup of domain cloud took 0.0 seconds.
+2018-08-02 17:29:38 INFO (MainThread) [homeassistant.setup] Setting up tts
+2018-08-02 17:29:38 INFO (MainThread) [homeassistant.setup] Setup of domain config took 19.8 seconds.
+2018-08-02 17:29:39 INFO (MainThread) [homeassistant.components.fan] Setting up fan.xiaomi_miio
+2018-08-02 17:29:39 INFO (MainThread) [homeassistant.components.fan.xiaomi_miio] Initializing with host 172.20.2.135 (token c014b...)
+2018-08-02 17:29:39 INFO (MainThread) [homeassistant.components.fan.xiaomi_miio] zhimi.airpurifier.m1 1.2.4_62 MC200 detected
+2018-08-02 17:29:39 INFO (MainThread) [homeassistant.components.switch] Setting up switch.xiaomi_miio
+2018-08-02 17:29:39 INFO (MainThread) [homeassistant.components.switch.xiaomi_miio] Initializing with host 172.20.2.67 (token a0de1...)
+2018-08-02 17:29:39 INFO (MainThread) [homeassistant.components.switch.xiaomi_miio] zimi.powerstrip.v2 1.2.4_51 MW300 detected
+2018-08-02 17:29:39 INFO (MainThread) [homeassistant.components.switch] Setting up switch.broadlink
+2018-08-02 17:29:41 INFO (MainThread) [homeassistant.setup] Setup of domain tts took 2.4 seconds.
+2018-08-02 17:29:41 INFO (MainThread) [homeassistant.setup] Setup of domain sensor took 22.6 seconds.
+2018-08-02 17:29:41 INFO (MainThread) [homeassistant.loader] Loaded sensor.xiaomi_aqara from homeassistant.components.sensor.xiaomi_aqara
+2018-08-02 17:29:41 INFO (MainThread) [homeassistant.components.sensor] Setting up sensor.xiaomi_aqara
+2018-08-02 17:29:42 INFO (MainThread) [homeassistant.setup] Setup of domain device_tracker took 23.4 seconds.
+2018-08-02 17:29:45 INFO (MainThread) [homeassistant.setup] Setup of domain fan took 26.0 seconds.
+2018-08-02 17:29:45 INFO (MainThread) [homeassistant.setup] Setup of domain switch took 26.1 seconds.
+2018-08-02 17:29:45 INFO (MainThread) [homeassistant.loader] Loaded switch.xiaomi_aqara from homeassistant.components.switch.xiaomi_aqara
+2018-08-02 17:29:45 INFO (MainThread) [homeassistant.components.switch] Setting up switch.xiaomi_aqara
+2018-08-02 17:29:45 INFO (MainThread) [homeassistant.bootstrap] Home Assistant initialized in 30.28s
+2018-08-02 17:29:45 INFO (MainThread) [homeassistant.loader] Loaded automation.homeassistant from homeassistant.components.automation.homeassistant
+2018-08-02 17:29:45 INFO (MainThread) [homeassistant.helpers.script] Script Set theme at startup: Running script
+2018-08-02 17:29:45 INFO (MainThread) [homeassistant.helpers.script] Script Set theme at startup: Executing step call service
+2018-08-02 17:29:45 INFO (MainThread) [homeassistant.components.frontend] Theme dark_teal set as default
+2018-08-02 17:29:47 INFO (SyncWorker_0) [botocore.vendored.requests.packages.urllib3.connectionpool] Starting new HTTP connection (1): 169.254.169.254
+2018-08-02 17:29:48 INFO (SyncWorker_0) [botocore.vendored.requests.packages.urllib3.connectionpool] Starting new HTTP connection (1): 169.254.169.254
+2018-08-02 17:29:51 INFO (MainThread) [homeassistant.loader] Loaded nest from homeassistant.components.nest
+2018-08-02 17:29:51 INFO (MainThread) [homeassistant.loader] Loaded deconz from homeassistant.components.deconz
+2018-08-02 17:29:51 INFO (MainThread) [homeassistant.loader] Loaded homematicip_cloud from homeassistant.components.homematicip_cloud
+2018-08-02 17:29:51 INFO (MainThread) [homeassistant.loader] Loaded sonos from homeassistant.components.sonos
+2018-08-02 17:29:51 INFO (MainThread) [homeassistant.loader] Loaded hue from homeassistant.components.hue
+2018-08-02 17:29:51 INFO (MainThread) [homeassistant.loader] Loaded persistent_notification from homeassistant.components.persistent_notification
+2018-08-02 17:29:51 INFO (MainThread) [homeassistant.components.cloud.iot] Connected
+2018-08-02 18:29:19 INFO (MainThread) [homeassistant.loader] Loaded hassio from homeassistant.components.hassio
+2018-08-02 18:29:20 INFO (MainThread) [homeassistant.components.updater] Submitted analytics to Home Assistant servers. Information submitted includes {'arch': 'x86_64', 'dev': False, 'docker': False, 'os_name': 'Linux', 'python_version': '3.6.5', 'timezone': 'Asia/Taipei', 'version': '0.74.2', 'virtualenv': False, 'hassio': False, 'components': ['fan', 'sensor', 'switch', 'config.entity_registry', 'cloud', 'http', 'logger', 'switch.xiaomi_miio', 'config.customize', 'zone', 'history', 'updater', 'fan.xiaomi_miio', 'logbook', 'discovery', 'lock.xiaomi_aqara', 'group', 'light', 'media_player', 'sensor.yr', 'automation', 'config.config_entries', 'script', 'switch.broadlink', 'binary_sensor', 'websocket_api', 'map', 'config.automation', 'config', 'sensor.xiaomi_aqara', 'system_log', 'conversation', 'device_tracker', 'binary_sensor.xiaomi_aqara', 'media_player.cast', 'recorder', 'sun', 'frontend', 'api', 'auth', 'switch.xiaomi_aqara', 'cover.xiaomi_aqara', 'lock', 'tts', 'config.core', 'xiaomi_aqara', 'sensor.speedtest', 'sensor.template', 'config.script', 'light.xiaomi_aqara', 'onboarding', 'cast', 'cover', 'config.group'], 'distribution': 'ubuntu', 'os_version': '16.04', 'huuid': '67f5833f56044e7e927146888b399865'}
+2018-08-02 19:35:12 ERROR (MainThread) [homeassistant.core] Invalid service data for xiaomi_aqara.add_device: Unknown gateway sid <xiaomi_gateway.xiaomigateway object at 0x7f423c540dd8> for dictionary value @ data['gw_mac']. Got None
+2018-08-02 20:22:30 INFO (MainThread) [homeassistant.helpers.script] Script Playing PS4: Running script
+2018-08-02 20:22:30 INFO (MainThread) [homeassistant.helpers.script] Script Playing PS4: Executing step call service
+2018-08-02 20:22:32 INFO (MainThread) [homeassistant.helpers.script] Script Playing PS4: Executing step call service
+2018-08-02 20:22:35 INFO (MainThread) [homeassistant.helpers.script] Script Playing PS4: Executing step call service
+2018-08-02 20:22:46 INFO (MainThread) [homeassistant.helpers.script] Script Playing PS4: Executing step call service
+2018-08-02 20:40:03 ERROR (SyncWorker_4) [homeassistant.core] Error doing job: Task was destroyed but it is pending!
+2018-08-02 21:55:57 ERROR (MainThread) [homeassistant.core] Error doing job: Task was destroyed but it is pending!
+2018-08-02 23:43:26 ERROR (Recorder) [homeassistant.core] Error doing job: Task was destroyed but it is pending!
+2018-08-02 23:45:50 ERROR (SyncWorker_0) [homeassistant.core] Error doing job: Task was destroyed but it is pending!
+2018-08-03 00:59:03 ERROR (MainThread) [homeassistant.core] Error doing job: Task was destroyed but it is pending!
+2018-08-03 03:29:49 WARNING (Thread-2) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2018-08-03 03:53:46 WARNING (Thread-3) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2018-08-03 03:53:53 ERROR (Thread-3) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
+2018-08-03 05:20:03 ERROR (Dummy-2285) [homeassistant.core] Error doing job: Task was destroyed but it is pending!
+2018-08-03 05:20:03 ERROR (Dummy-2285) [homeassistant.core] Error doing job: Task was destroyed but it is pending!
+2018-08-03 07:00:16 INFO (MainThread) [homeassistant.helpers.script] Script Watching TV: Running script
+2018-08-03 07:00:16 INFO (MainThread) [homeassistant.helpers.script] Script Watching TV: Executing step call service
+2018-08-03 07:00:17 INFO (MainThread) [homeassistant.helpers.script] Script Watching TV: Executing step call service
+2018-08-03 07:00:28 INFO (MainThread) [homeassistant.helpers.script] Script Watching TV: Executing step call service
+2018-08-03 07:19:43 INFO (MainThread) [homeassistant.helpers.script] Script Closing TV: Running script
+2018-08-03 07:19:43 INFO (MainThread) [homeassistant.helpers.script] Script Closing TV: Executing step call service
+2018-08-03 07:19:45 INFO (MainThread) [homeassistant.helpers.script] Script Closing TV: Executing step call service
+2018-08-03 08:09:16 ERROR (MainThread) [homeassistant.core] Error doing job: Fatal read error on socket transport
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 723, in _read_ready
+    data = self._sock.recv(self.max_size)
+TimeoutError: [Errno 110] Connection timed out
+2018-08-03 08:48:18 ERROR (MainThread) [homeassistant.core] Error doing job: Task was destroyed but it is pending!
+2018-08-03 09:30:27 ERROR (MainThread) [homeassistant.components.sensor.yr] Retrying in 18 minutes: 

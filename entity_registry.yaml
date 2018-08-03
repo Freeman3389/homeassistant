@@ -1,0 +1,75 @@
+media_player.chromecast:
+  config_entry_id:
+  name: Chromecast
+  platform: cast
+  unique_id: c2317eee-47d5-f288-7fc6-18f221099e39
+media_player.living_room_speaker:
+  config_entry_id:
+  name:
+  platform: cast
+  unique_id: 265d5a72-6a71-e838-57aa-1d9506861556
+media_player.living_room_speaker_2:
+  config_entry_id:
+  name:
+  platform: cast
+  unique_id: 1126df60-cae5-01e4-b0a3-c5d905dbcc5a
+sensor.illumination_7c49eb1a4ac5:
+  config_entry_id:
+  name: Illumination in 2F Dinning Room
+  platform: xiaomi_aqara
+  unique_id: illumination7c49eb1a4ac5
+sensor.temperature_158d000227d669:
+  config_entry_id:
+  name: Temperature in 2F Living Room
+  platform: xiaomi_aqara
+  unique_id: temperature158d000227d669
+sensor.humidity_158d000227d669:
+  config_entry_id:
+  name: Humidity in 2F Living Room
+  platform: xiaomi_aqara
+  unique_id: humidity158d000227d669
+switch.plug_158d0002327b35:
+  config_entry_id:
+  name: Back Light
+  platform: xiaomi_aqara
+  unique_id: status158d0002327b35
+binary_sensor.switch_158d0002110bb2:
+  config_entry_id:
+  name: Smart Button in 2F Dining room
+  platform: xiaomi_aqara
+  unique_id: status158d0002110bb2
+binary_sensor.motion_sensor_158d00022b63c1:
+  config_entry_id:
+  name: Motion Sensor near 2F Bathroom
+  platform: xiaomi_aqara
+  unique_id: status158d00022b63c1
+binary_sensor.door_window_sensor_158d00022ba7a3:
+  config_entry_id:
+  name: Window of 2F Living Room
+  platform: xiaomi_aqara
+  unique_id: status158d00022ba7a3
+binary_sensor.door_window_sensor_158d0002391ecc:
+  config_entry_id:
+  name: Window of Main Bedroom
+  platform: xiaomi_aqara
+  unique_id: status158d0002391ecc
+light.gateway_light_7c49eb1a4ac5:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: rgb7c49eb1a4ac5
+binary_sensor.smoke_sensor_158d0001b8dab0:
+  config_entry_id:
+  name: Smoke Sensor in 1F Dinning room
+  platform: xiaomi_aqara
+  unique_id: alarm158d0001b8dab0
+fan.xiaomi_miio_device:
+  config_entry_id: zhimi.airpurifier_2f_bedroom
+  name: Air Purifier in Bedroom
+  platform: xiaomi_miio
+  unique_id: zhimi.airpurifier.m1-78:11:DC:4B:D7:AC
+switch.xiaomi_powerstrip_2f_living_room:
+  config_entry_id: zimi.powerstrip_2f_living_room
+  name: Powerstrip for 2F Entertaiments
+  platform: xiaomi_miio
+  unique_id: zimi.powerstrip.v2-7C:49:EB:8C:D8:0D

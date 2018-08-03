@@ -1,0 +1,117 @@
+swtich_himedia:
+  name: Himedia Switches
+  entities:
+    - switch.hi_media_3d
+    - switch.hi_media_down
+    - switch.hi_media_home
+    - switch.hi_media_left
+    - switch.hi_media_ok
+    - switch.hi_media_play
+    - switch.hi_media_return
+    - switch.hi_media_right
+    - switch.hi_media_soundtrack
+    - switch.hi_media_subtitle
+    - switch.hi_media_up
+switch_sony_amp:
+  name: Sony AMP Switches
+  entities:
+    - switch.sony_amp_bd
+    - switch.sony_amp_catv
+    - switch.sony_amp_cd
+    - switch.sony_amp_game
+    - switch.sony_amp_mute
+    - switch.sony_amp_next
+    - switch.sony_amp_pause
+    - switch.sony_amp_play
+    - switch.sony_amp_previous
+    - switch.sony_amp_stop
+    - switch.sony_amp_tv
+    - switch.sony_amp_usb
+    - switch.sony_amp_video
+    - switch.sony_amp_volume_down
+    - switch.sony_amp_volume_up
+switch_mod:
+  name: MOD STB Switches
+  entities:
+    - switch.mod_0
+    - switch.mod_1
+    - switch.mod_2
+    - switch.mod_3
+    - switch.mod_4
+    - switch.mod_5
+    - switch.mod_6
+    - switch.mod_7
+    - switch.mod_8
+    - switch.mod_9
+    - switch.mod_home
+    - switch.mod_language
+    - switch.mod_ok
+    - switch.mod_return
+switch_lgtv:
+  name: LG TV Switches
+  entities:
+    - switch.lgtv_av1
+    - switch.lgtv_av2
+    - switch.lgtv_hdmi1
+    - switch.lgtv_hdmi2
+    - switch.lgtv_hdmi3
+    - switch.lgtv_hdmi4
+    - switch.lgtv_pc
+    - switch.lgtv_volume_down
+    - switch.lgtv_volume_up
+family:
+  name: Family status (by Phone)
+  entities:
+    - device_tracker.android185747588860104
+    - device_tracker.android7060892fc5187dfb
+    - device_tracker.huawei_mate_1038ced18c9c
+    - device_tracker.redminote3huamiaoco
+    - device_tracker.redminote3hongmisho
+devices:
+  name: Devices at home
+  entities:
+    - device_tracker.5067f01a5c55
+    - device_tracker.94ce2c69d6d4
+    - device_tracker.android766a57542b81794f
+    - device_tracker.freemanpc
+    - device_tracker.lumigatewayv3_miio87468466
+    - device_tracker.ts451
+    - device_tracker.ymaio
+    - device_tracker.ymhome_rpi
+2f_livingroom:
+  name: 2F Living Room
+  entities:
+    - binary_sensor.door_window_sensor_158d00022ba7a3
+    - sensor.humidity_158d000227d669
+    - sensor.temperature_158d000227d669
+    - sensor.temperature_powerstrip_2f_livingroom
+    - sensor.load_powerstrip_2f_livingroom
+    - switch.xiaomi_powerstrip_2f_living_room
+    - switch.hitachi_ac
+    - switch.lgtv
+    - switch.mod
+    - switch.plug_158d0002327b35
+    - switch.sony_amp
+    - switch.hi_media
+    - switch.hitachi_ac_airflow
+2f_dinningroom:
+  name: 2F Dinning Room
+  entities:
+    - binary_sensor.switch_158d0002110bb2
+    - light.gateway_light_7c49eb1a4ac5
+    - sensor.illumination_7c49eb1a4ac5
+    - binary_sensor.motion_sensor_158d00022b63c1
+2f_main_bedgroom:
+  name: 2F Main Bedroom
+  entities:
+    - binary_sensor.door_window_sensor_158d0002391ecc
+    - fan.xiaomi_miio_device
+    - sensor.humidity_airpurifier_2f_mainbedroom
+    - sensor.temperature_airpurifier_2f_mainbedroom
+    - sensor.aqi_airpurifier_2f_mainbedroom
+    - sensor.filter_remaining_airpurifier_2f_mainbedroom
+    - sensor.filter_used_airpurifier_2f_mainbedroom
+1f_livingroom:
+  name: 1F Living Room
+  entities:
+    - binary_sensor.smoke_sensor_158d0001b8dab0

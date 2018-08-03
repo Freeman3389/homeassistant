@@ -1,0 +1,38 @@
+hi_media:
+  friendly_name: "himedia player"
+  command_on: 'JgBYAAABKJUTEhMTEhMSExM2FBMSExITEzcTOBM3EzgSExM3EzgSOBM4ExISOBM4EjgTEhM4EhMSExM3ExMSExMSEzgSExI4EwAFHQABKEsTAAxjAAEoSxIADQU='
+  command_off: 'JgBYAAABKZUTEhITExITExI4ExITEhMTEjgTNxM4EjgTEhM4EjgTOBI4ExITOBI4EzcTExI4ExITEhM4EhMTEhMTEjgTEhM4EwAFHAABKUoTAAxiAAEpShMADQU='
+hi_media_up:
+  friendly_name: "himedia button up"
+  command_on: 'JgBQAAABKJUSExMSExITExI4ExITExITEjgTOBI4EzcTExI4EzcTOBI4ExIUNxITExITEhM4ExITEhM4EhMTNxM4EjgTEhM4EgAFHQABKUoTAA0FAAAAAAAAAAA='
+hi_media_left:
+  friendly_name: "himedia button left"
+  command_on: 'JgBQAAABKJUUERMTEhMTEhM4EhMSExMSEzgSOBM3EzgSExM3EzgSOBM4EjgTNxMTExITEhQRExMSExITExITOBI4EzcTOBM3EwAFHQABKEsSAA0FAAAAAAAAAAA='
+hi_media_down:
+  friendly_name: "himedia button down"
+  command_on: 'JgBQAAABKpMUEhITExITEhM4EhMTEhMSEzgTNxM4EjgTEhM4EzcTNxM4ExITOBITEjgTEhM4EhMTEhM4EhMSOBMSEzgTEhM3EwAFHQABKUoTAA0FAAAAAAAAAAA='
+hi_media_right:
+  friendly_name: "himedia button right"
+  command_on: 'JgBIAAABKJUTEhMTEhMSExM3ExMSExITEzcTOBI4EzgSExI4EzgSOBM3ExMSExITExITExITEhMTEhM4EjgTNxM4EjgTOBM3EwANBQ=='
+hi_media_ok:
+  friendly_name: "himedia button ok"
+  command_on: 'JgBQAAABKJUTEhITExITExI4ExITEhMTEjgTNxM4EjgTEhM4EjgTOBI4ExITEhQSEhMTEhM4EhMSExM3EzgSOBM4EjgTEhM3EwAFHQABKUoTAA0FAAAAAAAAAAA='
+hi_media_return:
+  friendly_name: "himedia button return"        
+  command_on: 'JgBQAAABKZQUEhITExITEhM4EhMTEhMSEzgTNxM4EjgTEhM4EjgTNxMTEhMTEhMSExMSExMSExITOBI4EzgSOBM3EzgTNxM4EgAFHgABKEoTAA0FAAAAAAAAAAA='
+hi_media_home:
+  friendly_name: "himedia button home"
+  command_on: 'JgBQAAABKZUTEhMSExITExI4ExITEhMTEjgTNxM4EzcTExI4EzcTOBITEzcTOBITExITEhM4ExITNxMTEhMTNxM4EjgTEhM4EgAFHQABKUoTAA0FAAAAAAAAAAA='
+hi_media_subtitle:
+  friendly_name: "himedia button subtitle"
+  command_on: 'JgBQAAABKJUTEhMSExMSExI4ExITExITEzcTOBI4EzgSExM3EzgSOBM4EjgTNxM4EhMTEhMTEhMSExMSExMSExI4EzgSOBM3EwAFHgABKEsTAA0FAAAAAAAAAAA='
+hi_media_soundtrack:
+  friendly_name: "himedia button soundtrack"
+  command_on: 'JgBQAAABKZQUEhITExITEhM4EhMTEhMTEjgTNxM4EjgTEhM4EzcTOBI4ExITOBI4ExITExITExITEhM4EhMTEhM4EjgTNxQ3EwAFHQABKEsTAA0FAAAAAAAAAAA='
+hi_media_3d:
+  friendly_name: "himedia button 3d"
+  command_on: 'JgBQAAABKJUTEhMSExITExI4ExITEhMTEjgTNxM4EjgTEhM4EjgTOBI4ExITEhMTEjgTEhM4EhMTEhM3EzgTNxMSEzgTEhM3EwAFHQABKUoTAA0FAAAAAAAAAAA='
+hi_media_play:
+  friendly_name: "himedia button play"
+  command_on: 'JgBQAAABKJUUERMSExMSExM3ExMTEhITEzcTOBI4EzgSExI4EzgSOBM3ExMSExI4EzgSExI4ExITExI4EzcTExITEzcTEhM4EgAFHgABKEoTAA0FAAAAAAAAAAA='
+

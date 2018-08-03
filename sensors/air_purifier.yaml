@@ -1,0 +1,22 @@
+- platform: template
+  sensors:
+    temperature_airpurifier_2f_mainbedroom:
+      friendly_name: "Temperature from Air Purifier"
+      unit_of_measurement: '°C'
+      value_template: "{{ '%.1f'|format(states.fan.xiaomi_miio_device.attributes.temperature) }}"
+    humidity_airpurifier_2f_mainbedroom:
+      friendly_name: "Humidity from Air Purifier"
+      unit_of_measurement: '%'
+      value_template: "{{ (states.fan.xiaomi_miio_device.attributes.humidity) }}"
+    aqi_airpurifier_2f_mainbedroom:
+      friendly_name: "AQI from Air Purifier"
+      unit_of_measurement: ''
+      value_template: "{{ (states.fan.xiaomi_miio_device.attributes.aqi) }}"
+    filter_used_airpurifier_2f_mainbedroom:
+      friendly_name: "Filter Used Hours of Air Purifier"
+      unit_of_measurement: 'Hours'
+      value_template: "{{ (states.fan.xiaomi_miio_device.attributes.filter_hours_used) }}"
+    filter_remaining_airpurifier_2f_mainbedroom:
+      friendly_name: "Filter Remaining of Air Purifier"
+      unit_of_measurement: '%'
+      value_template: "{{ (states.fan.xiaomi_miio_device.attributes.filter_life_remaining) }}"

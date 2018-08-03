@@ -1,0 +1,12 @@
+#Broadlink RM Pro
+- platform: broadlink
+  host: 172.20.2.134
+  mac: '34:ea:34:58:71:ab'
+  timeout: 15
+  friendly_name: 'Broadlink'
+  switches:
+    !include_dir_merge_named broadlink_switches
+- platform: xiaomi_miio
+  name: Powerstrip in Living Room
+  host: 172.20.2.67
+  token: a0de1ed294f3c53108ed34271b5b5f7e
