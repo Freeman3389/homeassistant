@@ -1,2 +1,3 @@
-secrets.yam
-home-assistant_v2.db
+./secrets.yaml
+./home-assistant_v2.db
+./home-assistant.log
