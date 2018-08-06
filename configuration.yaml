@@ -277,16 +277,25 @@ cloud:
 #  expose_by_default: true
 
 ############################################
+# MQTT Broker
+############################################
+mqtt:
+  broker: 172.20.2.62
+  port: 1883
+  username: !secret mqtt_username
+  password: !secret mqtt_password 
+
+############################################
 # Use Influxdb
 ############################################
 influxdb:
   host: 172.20.2.62
-  port: 20000
+  port: 8086
   database: home_assistant
   username: !secret influxdbuser
   password: !secret influxdbpass
-  ssl: true
-  verify_ssl: true
+  ssl: false
+  verify_ssl: false
   default_measurement: state
   #exclude:
   #  entities:
@@ -313,7 +322,7 @@ device_tracker:
     password: !secret router_password 
     interval_seconds: 10
     consider_home: 180
-    track_new_devices: no
+    track_new_devices: yes
 
 ############################################
 #Xiaomi Gateway

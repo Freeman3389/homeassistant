@@ -10,3 +10,8 @@
   name: Powerstrip in Living Room
   host: 172.20.2.67
   token: a0de1ed294f3c53108ed34271b5b5f7e
+- platform: xiaomi_miio
+  name: Powerstrip in Dinning Room
+  host: 172.20.2.68
+  token: c009874b10c45abb68ec8aa348fa3192
+

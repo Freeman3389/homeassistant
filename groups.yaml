@@ -1,5 +1,46 @@
+default_view:
+  view: yes
+  entities:
+    - group.family
+    - group.devices
+    - group.1f_livingroom
+    - group.1f_outdoor
+    - group.2f_dinningroom
+    - group.2f_livingroom
+    - group.2f_main_bedgroom
+    - group.all_automations
+    - group.all_scripts
+    - sensor.speedtest_download
+    - sensor.speedtest_ping
+    - sensor.speedtest_upload
+    - sun.sun
+automation_view:
+  name: Automation
+  view: no
+  entities:
+    - group.all_automations
+    - group.all_scripts
+devices_view:
+  name: Devices
+  view: no
+#  icon: mdi:desktop-mac-dashboard
+  entities:
+    - group.all_devices
+    - group.all_fans
+    - group.all_lights
+    - group.devices
+    - group.family
+weather_view:
+  name: Weather Forcasting
+  view: yes
+  icon: mdi:weather-windy-variant
+  entities:
+    - sensor.yr_symbol
 swtich_himedia:
   name: Himedia Switches
+  view: no
+  icon: mdi:remote
+  control: hidden
   entities:
     - switch.hi_media_3d
     - switch.hi_media_down
@@ -14,6 +55,9 @@ swtich_himedia:
     - switch.hi_media_up
 switch_sony_amp:
   name: Sony AMP Switches
+  view: no
+  icon: mdi:remote
+  control: hidden
   entities:
     - switch.sony_amp_bd
     - switch.sony_amp_catv
@@ -32,6 +76,9 @@ switch_sony_amp:
     - switch.sony_amp_volume_up
 switch_mod:
   name: MOD STB Switches
+  view: no
+  icon: mdi:remote
+  control: hidden
   entities:
     - switch.mod_0
     - switch.mod_1
@@ -49,6 +96,9 @@ switch_mod:
     - switch.mod_return
 switch_lgtv:
   name: LG TV Switches
+  view: no
+  icon: mdi:remote
+  control: hidden
   entities:
     - switch.lgtv_av1
     - switch.lgtv_av2
@@ -61,14 +111,21 @@ switch_lgtv:
     - switch.lgtv_volume_up
 family:
   name: Family status (by Phone)
+  view: no
+  icon: mdi:cellphone
+  control: hidden
   entities:
     - device_tracker.android185747588860104
     - device_tracker.android7060892fc5187dfb
     - device_tracker.huawei_mate_1038ced18c9c
     - device_tracker.redminote3huamiaoco
     - device_tracker.redminote3hongmisho
+    - device_tracker.androidd8803c0023f2
 devices:
   name: Devices at home
+  view: no
+  icon: mdi:desktop-classic
+  control: hidden
   entities:
     - device_tracker.5067f01a5c55
     - device_tracker.94ce2c69d6d4
@@ -78,10 +135,15 @@ devices:
     - device_tracker.ts451
     - device_tracker.ymaio
     - device_tracker.ymhome_rpi
+    - device_tracker.40167e57cf85
 2f_livingroom:
   name: 2F Living Room
+  view: yes
+  icon: mdi:television-classic
+  control: hidden
   entities:
     - binary_sensor.door_window_sensor_158d00022ba7a3
+    - binary_sensor.motion_sensor_158d0001b19368
     - sensor.humidity_158d000227d669
     - sensor.temperature_158d000227d669
     - sensor.temperature_powerstrip_2f_livingroom
@@ -96,13 +158,22 @@ devices:
     - switch.hitachi_ac_airflow
 2f_dinningroom:
   name: 2F Dinning Room
+  view: yes
+  icon: mdi:silverware-variant
+  control: hidden
   entities:
     - binary_sensor.switch_158d0002110bb2
     - light.gateway_light_7c49eb1a4ac5
     - sensor.illumination_7c49eb1a4ac5
     - binary_sensor.motion_sensor_158d00022b63c1
+    - sensor.load_powerstrip_2f_dinningroom
+    - sensor.temperature_powerstrip_2f_dinningroom
+    - switch.powerstrip_in_dinning_room
 2f_main_bedgroom:
   name: 2F Main Bedroom
+  view: yes
+  icon: mdi:bed-empty
+  control: hidden
   entities:
     - binary_sensor.door_window_sensor_158d0002391ecc
     - fan.xiaomi_miio_device
@@ -113,5 +184,19 @@ devices:
     - sensor.filter_used_airpurifier_2f_mainbedroom
 1f_livingroom:
   name: 1F Living Room
+  view: yes
+  icon: mdi:television
+  control: hidden
   entities:
     - binary_sensor.smoke_sensor_158d0001b8dab0
+1f_outdoor:
+  name: 1F Outdoor
+  view: yes
+  icon: mdi:pine-tree
+  control: hidden
+  entities:
+    - sensor.rpi_temperature
+    - sensor.rpi_humidity
+    - sensor.rpi_pm25
+    - sensor.rpi_pm10
+    - sensor.rpi_pm1

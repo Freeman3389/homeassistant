@@ -1,0 +1,22 @@
+- platform: mqtt 
+  name: "RPi_Temperature"
+  state_topic: "1F_Outdoor/temperature"
+  unit_of_measurement: '°c'
+- platform: mqtt
+  name: "RPi_Humidity"
+  state_topic: "1F_Outdoor/humidity"
+  unit_of_measurement: '%'
+- platform: mqtt
+  name: "RPi_PM25"
+  state_topic: "1F_Outdoor/pm25-at"
+  unit_of_measurement: 'μg/m3'
+- platform: mqtt
+  name: "RPi_PM10"
+  state_topic: "1F_Outdoor/pm10-at"
+  unit_of_measurement: 'μg/m3'
+- platform: mqtt
+  name: "RPi_PM1"
+  state_topic: "1F_Outdoor/pm1-at"
+  unit_of_measurement: 'μg/m3'
+
+  
