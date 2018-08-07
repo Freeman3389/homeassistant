@@ -8,4 +8,41 @@
     data:
       name: dark_teal
 
+- alias: 'Light on Batten Light by Motion'
+  initial_state: 'on'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001b19368
+      to: 'on'
+  condition:
+    - condition: and
+      conditions:
+        - condition: sun
+          after: sunset
+          after_offset: "-01:00:00"
+        - condition: time
+          before: "23:00:00"
+    - condition: and
+      conditions:
+        - condition: numeric_state
+          entity_id: sensor.illumination_7c49eb1a4ac5
+          below: '200'
+  action:
+    - service_template: >
+        switch.turn_{% if is_state('switch.plug_158d0002327b35', 'off') %}on{% else %}off{% endif %}
+      entity_id: switch.plug_158d0002327b35
+    - service: automation.turn_on
+      entity_id: automation.Light_off_Ballen_Lights_by_Motion
 
+- alias: 'Light off Ballen Lights by Motion'
+  initial_state: 'off'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001b19368
+      to: 'off'
+      for: '00:03:00'
+  action:
+    - service: switch.turn_off
+      entity_id: switch.plug_158d0002327b35
+    - service: automation.turn_off
+      entity_id: automation.Light_off_Ballen_Lights_by_Motion

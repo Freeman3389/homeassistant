@@ -121,6 +121,7 @@ family:
     - device_tracker.redminote3huamiaoco
     - device_tracker.redminote3hongmisho
     - device_tracker.androidd8803c0023f2
+    - device_tracker.amazfit_watch
 devices:
   name: Devices at home
   view: no
@@ -135,7 +136,10 @@ devices:
     - device_tracker.ts451
     - device_tracker.ymaio
     - device_tracker.ymhome_rpi
-    - device_tracker.40167e57cf85
+    - device_tracker.40167e57cf85i
+    - device_tracker.nexus7
+    - device_tracker.ps4
+    - device_tracker.yvonnenb
 2f_livingroom:
   name: 2F Living Room
   view: yes
@@ -148,7 +152,7 @@ devices:
     - sensor.temperature_158d000227d669
     - sensor.temperature_powerstrip_2f_livingroom
     - sensor.load_powerstrip_2f_livingroom
-    - switch.xiaomi_powerstrip_2f_living_room
+    - switch.powerstrip_in_living_room 
     - switch.hitachi_ac
     - switch.lgtv
     - switch.mod
@@ -156,8 +160,8 @@ devices:
     - switch.sony_amp
     - switch.hi_media
     - switch.hitachi_ac_airflow
-2f_dinningroom:
-  name: 2F Dinning Room
+2f_diningroom:
+  name: 2F Dining Room
   view: yes
   icon: mdi:silverware-variant
   control: hidden
@@ -166,9 +170,9 @@ devices:
     - light.gateway_light_7c49eb1a4ac5
     - sensor.illumination_7c49eb1a4ac5
     - binary_sensor.motion_sensor_158d00022b63c1
-    - sensor.load_powerstrip_2f_dinningroom
-    - sensor.temperature_powerstrip_2f_dinningroom
-    - switch.powerstrip_in_dinning_room
+    - sensor.load_powerstrip_2f_diningroom
+    - sensor.temperature_powerstrip_2f_diningroom
+    - switch.powerstrip_in_dining_room 
 2f_main_bedgroom:
   name: 2F Main Bedroom
   view: yes

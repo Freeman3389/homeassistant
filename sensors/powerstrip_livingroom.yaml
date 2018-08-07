@@ -3,8 +3,8 @@
     temperature_powerstrip_2f_livingroom:
       friendly_name: "Temperature of Powerstrip"
       unit_of_measurement: '°C'
-      value_template: "{{ '%.1f'|format(states.switch.xiaomi_powerstrip_2f_living_room.attributes.temperature) }}"
+      value_template: "{{ '%.1f'|format(states.switch.powerstrip_in_living_room.attributes.temperature) }}"
     load_powerstrip_2f_livingroom:
       friendly_name: "Power Load of Powerstrip"
       unit_of_measurement: 'W'
-      value_template: "{{ '%.2f'|format(states.switch.xiaomi_powerstrip_2f_living_room.attributes.load_power) }}"
+      value_template: "{{ '%.2f'|format(states.switch.powerstrip_in_living_room.attributes.load_power) }}"

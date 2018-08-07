@@ -347,5 +347,5 @@ fan:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include_dir_named scripts
-switch: !include_dir_merge_list switches
+switch: !include switches.yaml
 sensor: !include_dir_merge_list sensors
