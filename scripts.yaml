@@ -1,0 +1,139 @@
+after_the_movies:
+  alias: After the Movies
+  sequence:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.hi_media
+  - delay: 00:00:01
+  - service: switch.turn_off
+    data:
+      entity_id: switch.sony_amp
+  - delay: 00:00:01
+  - service: switch.turn_off
+    data:
+      entity_id: switch.lgtv
+closing_tv:
+  alias: Closing TV
+  sequence:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.mod
+  - delay: 00:00:01
+  - service: switch.turn_off
+    data:
+      entity_id: switch.lgtv
+playing_movies:
+  alias: Playing Movies
+  sequence:
+  - data:
+      entity_id: switch.lgtv
+    service: switch.turn_on
+  - delay: 00:00:01
+  - data:
+      entity_id: switch.sony_amp
+    service: switch.turn_on
+  - delay: 00:00:01
+  - data:
+      entity_id: switch.hi_media
+    service: switch.turn_on
+  - delay: 00:00:01
+  - data:
+      entity_id: switch.sony_amp_bd
+    service: switch.turn_on
+  - delay: 00:00:12
+  - data:
+      entity_id: switch.lgtv_hdmi1
+    service: switch.turn_on
+  - delay: 00:00:15
+  - data:
+      entity_id: switch.hi_media_down
+    service: switch.turn_on
+  - delay:
+      milliseconds: 500
+  - data:
+      entity_id: switch.hi_media_left
+    service: switch.turn_on
+  - delay:
+      milliseconds: 500
+  - data:
+      entity_id: switch.hi_media_ok
+    service: switch.turn_on
+  - delay:
+      milliseconds: 500
+  - data:
+      entity_id: switch.hi_media_down
+    service: switch.turn_on
+  - delay:
+      seconds: 1
+  - data:
+      entity_id: switch.hi_media_ok
+    service: switch.turn_on
+  - delay:
+      seconds: 1
+  - data:
+      entity_id: switch.hi_media_ok
+    service: switch.turn_on
+  - delay:
+      seconds: 1
+  - data:
+      entity_id: switch.hi_media_ok
+    service: switch.turn_on
+  - delay: 00:00:05
+  - data:
+      entity_id: switch.hi_media_down
+    service: switch.turn_on
+  - delay:
+      milliseconds: 500
+  - data:
+      entity_id: switch.hi_media_down
+    service: switch.turn_on
+  - delay:
+      milliseconds: 500
+  - data:
+      entity_id: switch.hi_media_down
+    service: switch.turn_on
+  - delay:
+      milliseconds: 500
+  - data:
+      entity_id: switch.hi_media_down
+    service: switch.turn_on
+  - delay: 00:00:01
+  - data:
+      entity_id: switch.hi_media_down
+    service: switch.turn_on
+  - delay: '[object Object]'
+  - data:
+      entity_id: switch.hi_media_down
+    service: switch.turn_on
+playing_ps4:
+  alias: Playing PS4
+  sequence:
+  - service: switch.turn_on
+    data:
+      entity_id: switch.lgtv
+  - delay: 00:00:01
+  - service: switch.turn_on
+    data:
+      entity_id: switch.sony_amp
+  - delay: 00:00:01
+  - service: switch.turn_on
+    data:
+      entity_id: switch.sony_amp_game
+  - delay: 00:00:10
+  - service: switch.turn_on
+    data:
+      entity_id: switch.lgtv_hdmi1
+watching_tv:
+  alias: Watching TV
+  sequence:
+  - service: switch.turn_on
+    data:
+      entity_id: switch.lgtv
+  - delay: 00:00:01
+  - service: switch.turn_on
+    data:
+      entity_id: switch.mod
+  - delay: 00:00:10
+  - service: switch.turn_on
+    data:
+      entity_id: switch.lgtv_hdmi2

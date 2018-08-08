@@ -272,6 +272,17 @@ tts:
 # Cloud
 cloud:
 
+notify:
+  - name: linenotify_restful
+    platform: rest
+    resource: https://notify-api.line.me/api/notify
+    method: POST
+    headers: 
+      authorization: !secret linenotify_rest_secret
+#      accept: 'application/json, text/html'
+      payload: '{"message": "{{ message }}"}'
+      content_type: 'application/x-www-form-urlencoded, multipart/form-data'
+
 # Make a fake Hue for Alexa
 #emulated_hue:
 #  expose_by_default: true
@@ -346,6 +357,6 @@ fan:
 ############################################
 group: !include groups.yaml
 automation: !include automations.yaml
-script: !include_dir_named scripts
+script: !include scripts.yaml
 switch: !include switches.yaml
 sensor: !include_dir_merge_list sensors

@@ -1,48 +1,163 @@
-- alias: 'Set theme at startup'
+- alias: Set theme at startup
   initial_state: 'on'
   trigger:
-    - platform: homeassistant
-      event: start
+  - platform: homeassistant
+    event: start
   action:
     service: frontend.set_theme
     data:
       name: dark_teal
-
-- alias: 'Light on Batten Light by Motion'
+  id: 97fe8335f54d4406911deb6184c6b562
+- alias: Light on Batten Light by Motion
   initial_state: 'on'
   trigger:
-    - platform: state
-      entity_id: binary_sensor.motion_sensor_158d0001b19368
-      to: 'on'
+  - platform: state
+    entity_id: binary_sensor.motion_sensor_158d0001b19368
+    to: 'on'
   condition:
-    - condition: and
-      conditions:
-        - condition: sun
-          after: sunset
-          after_offset: "-01:00:00"
-        - condition: time
-          before: "23:00:00"
-    - condition: and
-      conditions:
-        - condition: numeric_state
-          entity_id: sensor.illumination_7c49eb1a4ac5
-          below: '200'
+  - condition: and
+    conditions:
+    - condition: sun
+      after: sunset
+      after_offset: -01:00:00
+    - condition: time
+      before: '23:00:00'
+  - condition: and
+    conditions:
+    - condition: numeric_state
+      entity_id: sensor.illumination_7c49eb1a4ac5
+      below: '200'
   action:
-    - service_template: >
-        switch.turn_{% if is_state('switch.plug_158d0002327b35', 'off') %}on{% else %}off{% endif %}
-      entity_id: switch.plug_158d0002327b35
-    - service: automation.turn_on
-      entity_id: automation.Light_off_Ballen_Lights_by_Motion
+  - service_template: 'switch.turn_{% if is_state(''switch.plug_158d0002327b35'',
+      ''off'') %}on{% else %}off{% endif %}
 
-- alias: 'Light off Ballen Lights by Motion'
+      '
+    entity_id: switch.plug_158d0002327b35
+  - service: automation.turn_on
+    entity_id: automation.Light_off_Ballen_Lights_by_Motion
+  id: 3577f7b91c2542dabaf059b2a209b20e
+- alias: Light off Ballen Lights by Motion
   initial_state: 'off'
   trigger:
-    - platform: state
-      entity_id: binary_sensor.motion_sensor_158d0001b19368
-      to: 'off'
-      for: '00:03:00'
+  - platform: state
+    entity_id: binary_sensor.motion_sensor_158d0001b19368
+    to: 'off'
+    for: 00:03:00
   action:
-    - service: switch.turn_off
-      entity_id: switch.plug_158d0002327b35
-    - service: automation.turn_off
-      entity_id: automation.Light_off_Ballen_Lights_by_Motion
+  - service: switch.turn_off
+    entity_id: switch.plug_158d0002327b35
+  - service: automation.turn_off
+    entity_id: automation.Light_off_Ballen_Lights_by_Motion
+  id: 0afd66a857a14950876de5d678022426
+- alias: Turn On Air Purifier when PM25 high and windows opened
+  initial_state: 'on'
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.door_window_sensor_158d0002391ecc
+    to: 'on'
+    for:
+      minutes: 5
+  condition:
+  - condition: numeric_state
+    entity_id: sensor.rpi_pm25
+    above: 71
+  action:
+  - service: fan.turn_on
+    entity_id: fan.xiaomi_miio_device
+    data:
+      speed: high
+  id: 768dfdf029dd4b43b9765faaccadfa9c
+- alias: Turn Off Air Purifier when PM25 is low
+  initial_state: 'on'
+  trigger:
+  - platform: numeric_state
+    entity_id: sensor.aqi_airpurifier_2f_mainbedroom
+    below: 36
+    for:
+      minutes: 5
+  condition:
+  - condition: state
+    entity_id: fan.xiaomi_miio_device
+    state: 'on'
+  action:
+  - service: fan.turn_off
+    entity_id: fan.xiaomi_miio_device
+  id: d7e5eb2fbdaf4d40b68695ea57ab2e7b
+- alias: Notify when battery of sensors is low
+  initial_state: true
+  hide_entity: true
+  trigger:
+  - platform: numeric_state
+    entity_id:
+    - binary_sensor.door_window_sensor_158d00022ba7a3
+    - binary_sensor.door_window_sensor_158d0002391ecc
+    - binary_sensor.motion_sensor_158d0001b19368
+    - binary_sensor.motion_sensor_158d00022b63c1
+    - binary_sensor.smoke_sensor_158d0001b8dab0
+    - binary_sensor.switch_158d0002110bb2
+    below: 10
+    for:
+      hours: 1
+  condition:
+  - condition: time
+    after: '18:00:00'
+    before: '22:00:00'
+  action:
+  - service: notify.linenotify_restful
+    data_template:
+      message: '{{ trigger.from_state.attributes.friendly_name }} 感測器該準備換電池囉!'
+  id: 872e7aadfc6c4c049fe01ee7ef69b035
+- id: 9f98f2dbd5544857b040ecaf4128585c
+  alias: Notify when someone coming home
+  trigger:
+  - entity_id:
+    - device_tracker.android185747588860104
+    - device_tracker.android7060892fc5187dfb
+    - device_tracker.huawei_mate_1038ced18c9c
+    - device_tracker.redminote3hongmisho
+    - device_tracker.redminote3huamiaoco
+    - device_tracker.amazfit_watch
+    for:
+      minutes: 1
+    from: not_home
+    platform: state
+    to: home
+  condition:
+  - after: '12:00:00'
+    before: '22:00:00'
+    condition: time
+  action:
+  - data:
+      message: '{{ trigger.from_state.attributes.friendly_name }} 回到家囉!!'
+    service: notify.linenotify_restful
+  initial_state: true
+  hide_entity: true
+- id: '1533729089120'
+  alias: Notify Test
+  trigger:
+  - entity_id: automation.notify_test
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - data:
+      message: 這是HA的Line Notify測試訊息
+    service: notify.linenotify_restful
+- alias: Notify PM25 value
+  trigger:
+  - platform: time
+    minutes: '/10'
+  condition: 
+    - condition: numeric_state
+      entity_id: sensor.rpi_pm25
+      above: 54
+  action:
+  - service: notify.linenotify_restful
+    data_template: 
+      message: >
+        {% if states("sensor.rpi_pm25") | int < 70  %} 
+          "<<PM2.5 高度警戒>> 任何人感到不適，如眼痛，咳嗽或喉嚨痛。應該考慮減少活動，尤其是在戶外。"
+        {%  elif states("sensor.season") | int > 71 and states("sensor.season") %}
+          "!!PM2.5 特高警戒!! 應減少在戶外的體力消耗，尤其是如果你有咳嗽或喉嚨痛等症狀。"
+        {% endif %}'
