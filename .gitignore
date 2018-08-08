@@ -8,3 +8,4 @@ entity_registry.yaml
 emulated_hue_ids.json
 .cloud/production_auth.json
 .storage/core.config_entries
+ui-lovelace.yaml.*

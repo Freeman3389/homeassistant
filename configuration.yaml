@@ -34,7 +34,7 @@ http:
   # Secrets are defined in the file secrets.yaml
   api_password: !secret http_password 
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  base_url: https://ymhome.duckdns.org:8123
+  base_url: !secret base_url
   #server_port: 8123
   ssl_certificate: !secret cert_path
   ssl_key: !secret key_path
@@ -330,8 +330,8 @@ device_tracker:
 xiaomi_aqara:
   discovery_retry: 5
   gateways:
-    - mac: '7c:49:eb:1a:4a:c5'
-      key: 'f54510xsm8utje7m'
+    - mac: !secret gateway_mac
+      key: !secret gateway_token
 
 ############################################
 #Xiaomi Airpurifier @ Main Bed Room
@@ -339,7 +339,7 @@ xiaomi_aqara:
 fan:
   - platform: xiaomi_miio
     host: 172.20.2.135
-    token: c014b309861fb985699ff3f79d7baf02
+    token: !secret airpurifier_token
 
 ############################################       
 # Includes

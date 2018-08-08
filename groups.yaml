@@ -5,7 +5,7 @@ default_view:
     - group.devices
     - group.1f_livingroom
     - group.1f_outdoor
-    - group.2f_dinningroom
+    - group.2f_diningroom
     - group.2f_livingroom
     - group.2f_main_bedgroom
     - group.all_automations

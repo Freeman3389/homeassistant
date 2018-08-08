@@ -1,7 +1,7 @@
 - platform: mqtt 
   name: "RPi_Temperature"
   state_topic: "1F_Outdoor/temperature"
-  unit_of_measurement: '°c'
+  unit_of_measurement: '°C'
 - platform: mqtt
   name: "RPi_Humidity"
   state_topic: "1F_Outdoor/humidity"
