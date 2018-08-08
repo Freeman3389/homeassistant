@@ -1,0 +1,65 @@
+name: Home
+views:
+- cards:
+  - type: entities
+    title: Family status (by Phone)
+    entities:
+    - device_tracker.android185747588860104
+    - device_tracker.android7060892fc5187dfb
+    - device_tracker.huawei_mate_1038ced18c9c
+    - device_tracker.redminote3huamiaoco
+    - device_tracker.redminote3hongmisho
+    - device_tracker.androidd8803c0023f2
+    - device_tracker.amazfit_watch
+  - type: entities
+    title: Devices at home
+    entities:
+    - device_tracker.5067f01a5c55
+    - device_tracker.94ce2c69d6d4
+    - device_tracker.android766a57542b81794f
+    - device_tracker.freemanpc
+    - device_tracker.lumigatewayv3_miio87468466
+    - device_tracker.ts451
+    - device_tracker.ymaio
+    - device_tracker.ymhome_rpi
+    - device_tracker.40167e57cf85i
+    - device_tracker.nexus7
+    - device_tracker.ps4
+    - device_tracker.yvonnenb
+  - type: entity-filter
+    card_config:
+      title: All Automations
+    filter:
+    - domain: automation
+  - type: entity-filter
+    card_config:
+      title: All Scripts
+    filter:
+    - domain: script
+- name: Weather Forcasting
+  tab_icon: mdi:weather-windy-variant
+  cards: []
+- name: 2F Living Room
+  tab_icon: mdi:television-classic
+  cards: []
+- name: 2F Dining Room
+  tab_icon: mdi:silverware-variant
+  cards: []
+- name: 2F Main Bedroom
+  tab_icon: mdi:bed-empty
+  cards: []
+- name: 1F Living Room
+  tab_icon: mdi:television
+  cards: []
+- name: 1F Outdoor
+  tab_icon: mdi:pine-tree
+  cards: []
+- cards:
+  - card_config:
+      title: All Entities
+    filter:
+    - {}
+    type: entity-filter
+  name: All Entities
+  tab_icon: mdi:settings
+
