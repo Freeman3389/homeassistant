@@ -5,7 +5,7 @@
   timeout: 15
   friendly_name: 'Broadlink'
   switches:
-    !include_dir_merge_named broadlink_switches
+    !include_dir_merge_named switches
 - platform: xiaomi_miio
   name: Powerstrip in Living Room
   host: 172.20.2.67
@@ -14,4 +14,3 @@
   name: Powerstrip in Dining Room
   host: 172.20.2.68
   token: !secret powerstrip_dr_token
-

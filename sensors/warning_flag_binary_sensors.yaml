@@ -1,0 +1,23 @@
+binary_sensor:
+  - platform: template
+    sensors:
+      pm25_warning: 
+        friendly_name: "Flag for PM 2.5 Warning"
+        value_template: >
+          {% if states('sensor.rpi_pm25')|float > 54 %}
+            on
+          {% else %}
+            off
+          {% endif %}
+        delay_on:
+          minutes: 30
+      hot_warning:
+        friendly_name: "Flag for Temperature too hot"
+        value_template: >
+          {% if states('sensor.rpi_temperature')|float > 35 %}
+            on
+          {% else %}
+            off
+          {% endif %}
+        delay_on:
+          minutes: 30

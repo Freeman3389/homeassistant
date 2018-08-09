@@ -28,10 +28,7 @@
       entity_id: sensor.illumination_7c49eb1a4ac5
       below: '200'
   action:
-  - service_template: 'switch.turn_{% if is_state(''switch.plug_158d0002327b35'',
-      ''off'') %}on{% else %}off{% endif %}
-
-      '
+  - service_template: switch.turn_{% if is_state('switch.plug_158d0002327b35','off') %}on{% else %}off{% endif %}
     entity_id: switch.plug_158d0002327b35
   - service: automation.turn_on
     entity_id: automation.Light_off_Ballen_Lights_by_Motion
@@ -123,12 +120,21 @@
     platform: state
     to: home
   condition:
-  - after: '12:00:00'
-    before: '22:00:00'
-    condition: time
+    - condition: and
+      conditions:
+      - condition: time
+        after: '06:00:00'
+        before: '23:00:00'
+      - condition: template
+        value_template: "{{ trigger.to_state.state != trigger.from_state.state}}"  
   action:
-  - data:
-      message: '{{ trigger.from_state.attributes.friendly_name }} 回到家囉!!'
+  - data_template:
+      message: >
+        {% if is_state('{{ trigger.to_state }}') == 'home' %}
+          {{ trigger.from_state.attributes.friendly_name }} 回到家囉!!
+        {% else %}
+          {{ trigger.from_state.attributes.friendly_name }} 離開家囉!!
+        {% endif %}
     service: notify.linenotify_restful
   initial_state: true
   hide_entity: true
@@ -142,22 +148,60 @@
   condition: []
   action:
   - data:
-      message: 這是HA的Line Notify測試訊息
+      message: 這是HA的Line Notify開機測試訊息
     service: notify.linenotify_restful
-- alias: Notify PM25 value
+- alias: Notify PM25 raising high
   trigger:
-  - platform: time
-    minutes: '/10'
-  condition: 
-    - condition: numeric_state
-      entity_id: sensor.rpi_pm25
-      above: 54
+  - platform: state
+    entity_id: binary_sensor.pm25_warning
+    from: 'off'
+    to: 'on'
   action:
   - service: notify.linenotify_restful
     data_template: 
       message: >
         {% if states("sensor.rpi_pm25") | int < 70  %} 
-          "<<PM2.5 高度警戒>> 任何人感到不適，如眼痛，咳嗽或喉嚨痛。應該考慮減少活動，尤其是在戶外。"
-        {%  elif states("sensor.season") | int > 71 and states("sensor.season") %}
-          "!!PM2.5 特高警戒!! 應減少在戶外的體力消耗，尤其是如果你有咳嗽或喉嚨痛等症狀。"
-        {% endif %}'
+          【PM2.5 警報】 目前PM 2.5數值為 {{ states.sensor.rpi_pm25.state }} => 任何人感到不適，如眼痛，咳嗽或喉嚨痛。應該考慮減少活動，尤其是在戶外。
+        {%  elif states("sensor.rpi_pm25") | int > 71 %}
+          【PM2.5 警報】 目前PM 2.5數值為 {{ states.sensor.rpi_pm25.state }} => 應減少在戶外的體力消耗，尤其是有咳嗽或喉嚨痛等症狀。
+        {% endif %}
+
+- alias: Notify PM25 warning cancelled
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.pm25_warning
+    from: 'on'
+    to: 'off'
+  action:
+  - service: notify.linenotify_restful
+    data_template: 
+      message: >
+        【警報解除】目前PM2.5數值為 {{ states.sensor.rpi_pm25.state }} => 已降回正常標準
+  
+- alias: Notify too hot
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.hot_warning
+    from: 'off'
+    to: 'on'
+  action:
+  - service: notify.linenotify_restful
+    data_template: 
+      message: >
+        {% if states("sensor.rpi_humidity") | float < 50 %} 
+          <<氣溫炎熱>> 氣溫高於35°C，注意防晒，避免長時間於日光下活動。
+        {%  else %}
+          <<高溫悶熱>> 應減少在戶外尤其是太陽下的劇烈活動，注意防晒並適時補充水分。
+        {% endif %}
+
+- alias: Notify "too hot" warning cancelled
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.hot_warning
+    from: 'on'
+    to: 'off'
+  action:
+  - service: notify.linenotify_restful
+    data_template: 
+      message: >
+        【警報解除】目前氣溫為 {{ states.sensor.rpi_temperature.state }} => 已降回正常標準
